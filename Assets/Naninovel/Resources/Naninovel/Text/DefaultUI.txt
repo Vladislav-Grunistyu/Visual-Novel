@@ -1,0 +1,69 @@
+﻿CGGallery.Title: CG ГАЛЕРЕЯ
+Confirmation.No: НЕТ
+Confirmation.Yes: ДА
+ControlPanel.Auto: АВТО
+ControlPanel.Hide: СКРЫТЬ
+ControlPanel.Load: ЗАГРУЗИТЬ
+ControlPanel.Log: ЖУРНАЛ
+ControlPanel.QuickLoad: Б.ЗАГРУЗКА
+ControlPanel.QuickSave: Б.СОХРАНЕНИЕ
+ControlPanel.Save: СОХРАНИТЬ
+ControlPanel.Settings: НАСТРОЙКИ
+ControlPanel.Skip: ПРОПУСТИТЬ
+ControlPanel.Tips: СОВЕТЫ
+ControlPanel.Title: ЗАГОЛОВОК
+ExternalScriptsBrowser.Info: Выберите сценарий для воспроизведения
+ExternalScriptsBrowser.Title: ВНЕШНИЕ СКРИПТЫ
+General.Close: ЗАКРЫТЬ
+General.Return: ВОЗВРАТ
+Naninovel.UI.ControlPanelTitleButton.ConfirmationMessage: Вы уверены, что хотите выйти на экран заголовка?\nВесь несохраненный игровой прогресс будет потерян.
+Naninovel.UI.GameSettingsFontDropdown.DefaultFontName: По умолчанию
+Naninovel.UI.GameSettingsFontSizeDropdown.Default: По умолчанию
+Naninovel.UI.GameSettingsFontSizeDropdown.ExtraLarge: Очень большой
+Naninovel.UI.GameSettingsFontSizeDropdown.Large: Большой
+Naninovel.UI.GameSettingsFontSizeDropdown.Small: Маленький
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption1: Очень низкий
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption2: Низкий
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption3: Средний
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption4: Высокий
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption5: Очень высокий
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption6: Ультра
+Naninovel.UI.GameSettingsScreenModeDropdown.ExclusiveFullScreen: Полный экран
+Naninovel.UI.GameSettingsScreenModeDropdown.FullScreenWindow: Полноэкранное окно
+Naninovel.UI.GameSettingsScreenModeDropdown.MaximizedWindow: Развернутое окно
+Naninovel.UI.GameSettingsScreenModeDropdown.Windowed: Оконный
+Naninovel.UI.GameSettingsSkipModeDropdown.Everything: Все
+Naninovel.UI.GameSettingsSkipModeDropdown.ReadOnly: Только для чтения
+Naninovel.UI.GameStateSlot.EmptySlotLabel: Пустой
+Naninovel.UI.SaveLoadMenu.DeleteSaveSlotMessage: Вы уверены, что хотите удалить слот сохранения?
+Naninovel.UI.SaveLoadMenu.OverwriteSaveSlotMessage: Вы ​​уверены, что хотите перезаписать слот сохранения?
+SaveLoadMenu.Tab.Load: ЗАГРУЗКА
+SaveLoadMenu.Tab.QuickLoad: Б. ЗАГРУЗКА
+SaveLoadMenu.Tab.Save: СОХРАНИТЬ
+SettingsMenu.AutoDelay: Автозадержка:
+SettingsMenu.Font: Шрифт:
+SettingsMenu.FontSize: Размер шрифта:
+SettingsMenu.Graphics: Графика:
+SettingsMenu.Language: Язык:
+SettingsMenu.MessageSpeed: Скорость сообщения:
+SettingsMenu.Preview: Предварительный просмотр
+SettingsMenu.PreviewText: Эй, цирюльникъ, ёжик выстриги, да щетину ряхи сбрей, феном вошь за печь гони! 
+SettingsMenu.Resolution: Разрешение:
+SettingsMenu.ScreenMode: Режим экрана:
+SettingsMenu.SkipMode: Режим пропуска:
+SettingsMenu.Tab.Basic: БАЗА
+SettingsMenu.Tab.Sound: ЗВУК
+SettingsMenu.Tab.Text: ТЕКСТ
+SettingsMenu.VoiceLanguage: Язык голоса:
+SettingsMenu.VolumeEffects: Громкость эффектов:
+SettingsMenu.VolumeMaster: Общая громкость:
+SettingsMenu.VolumeMusic: Громкость музыки:
+SettingsMenu.VolumeVoice: Громкость голоса:
+TitleMenu.CGGallery: CG ГАЛЕРЕЯ
+TitleMenu.Continue: ПРОДОЛЖИТЬ
+TitleMenu.Exit: ВЫХОД
+TitleMenu.ExternalScripts: ВНЕШНИЕ СКРИПТЫ
+TitleMenu.NewGame: НОВАЯ ИГРА
+TitleMenu.Settings: НАСТРОЙКИ
+TitleMenu.Tips: СОВЕТЫ
+VariableInput.Submit: ОТПРАВИТЬ

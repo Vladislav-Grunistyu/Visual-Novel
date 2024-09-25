@@ -1,0 +1,265 @@
+@set name="Player" 
+@set itemCollected=false
+@set miniGameCompleted=false
+@set goBackToStreet=false
+@set giveFullKira=false
+@set giveFullLexa=false
+@set gameEnd=false
+
+;Изначально думал что # и есть отдельные скрипт. Оказалось иначе) Получился один большой сценарий. Можно переписать под отдельные сценарии nani
+
+@bgm Music
+@back Room
+@input name summary:"Введите ваше имя."
+@stop
+@char Lexa.Default
+Lexa: Вставай {name}.
+Lexa: Я нашла его!
+{name}: Кого его? И почему ты так одета?
+Lexa: Не важно. Я нашла фулл!
+{name}: Фулл?
+Lexa: ФУЛЛ!
+{name}: Тот самый?
+Lexa: Ага, я все паблики промониторила, и вот. В нижнем с телеги ссылочка нашлась.
+Lexa: Правда ссылочка вела на трекер. А там пиров нет.
+Lexa: Я нашла одного корпарата, она может раздать. Только она хочет лично познакомиться.
+{name}: Лично? Странно. А вдруг это скуф на твинке с тяночки?
+@char Lexa.Surprise
+@sfx Laugh
+Lexa: Ахахахахаха! Не бойся. Это ирл тян пруфы есть, 23 лвл, листва!
+{name}: Я траву не трогал 3 месяца. А тут такое.
+@char Lexa.Confused
+@sfx Realy
+Lexa: Серьезно? Мы так долго искали фулл, и ты сливаешься.
+{name}: Я пойду! Просто захотелось воды полить.
+Lexa: Хорошо тогда иди на Jig-Jig Street. Улицу я уже отметила у тебя на карте. Иконка в виде персонажа.
+Lexa: Там ты найдешь девушку по именни Кира.
+{name}: Ок уже иду.
+@showUI QuestLog
+@sfx Updatelog
+@set "QuestLog=\"Поговорить с Кирой\""
+Lexa: Я тоже ухожу. Меня админ паблика позвал на летучку.
+@hide Lexa
+@printer  visible:false
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.Map
+@stop
+
+# HiKira
+@char Kira.Default
+{name}:  Привет Кира.
+Kira: Так ты и есть тот самый {name}!
+{name}:  Да, мне сказали что ты можешь освежить пир.
+Kira: Да, конечно! Держи.
+{name}: Так быстро?
+{name}: Подожди... [wait 1] это же ссылка... [wait 1] на... [wait 1] НА ПАТРЕОН!?
+@char Kira.Confused
+@sfx Oopsie
+Kira: Ой похоже что фулл платный!
+@spawn ShakeCamera
+{name}: ЧТО, ФУЛЛ ПЛАТНЫЙ?
+@spawn ShakeCamera
+{name}: БЫТЬ ТАКОГО НЕ МОЖЕТ. ЧТОБЫ Я ПЛАТИЛ ЗА ФУЛЛ!?
+@spawn ShakeCamera
+{name}: Я найду фулл. Любой ценой. ЛЮБОЙ, НО БЕСЛАТНО!!!
+Kira: А ты смешной. Хорошо я дам тебе фулл. Но чтобы получить его надо сыграть со мной в игру.
+{name}: В игру? Ну ладно... Это все же лучше чем сидеть без фулла.
+@sfx Updatelog
+@set "QuestLog=\"Сыграть в игру!\""
+@hide Kira
+@printer  visible:false
+@startMiniGame settingsPath:MiniGameSettings/MemorySettings
+@char Kira.Default
+Kira: Ого, молодец.
+{name}: Я победил, теперь говори где фулл.
+@char Kira.Surprise
+Kira: Хорошо, фулл находиться в офисе ООО "Рога И Копыта". Автор только что там оставил его.
+Kira: Он еще помечен у тебя восклицательным знаком на карте.
+Kira: Когда найдешь фулл, вернись ко мне.
+Kira: У меня будет для тебя деловое предложение.
+@sfx Updatelog
+@set "QuestLog=\"Забрать фулл в офисе\""
+@set miniGameCompleted=true
+@hide Kira
+@printer  visible:false
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.Map
+@stop
+
+# Map
+@sfx Openmap
+@back Map id:Interactive
+@choice  button:ChoiseButtons/MapHome pos:-200,-200 handler:ButtonArea goto:.Room
+@choice  button:ChoiseButtons/MapStreet pos:0,0 handler:ButtonArea goto:.Street
+@choice  button:ChoiseButtons/MapOffice pos:200,200 handler:ButtonArea goto:.Office
+@stop
+
+# MapAfterFull
+@hide Kira
+@hide Lexa
+@sfx Openmap
+@back Map id:Interactive
+@choice  button:ChoiseButtons/MapHome pos:-200,-200 handler:ButtonArea goto:.Room
+@choice  button:ChoiseButtons/MapStreet pos:0,0 handler:ButtonArea goto:.Street
+@choice  button:ChoiseButtons/MapOfficeDisable pos:200,200 handler:ButtonArea
+@stop
+
+# Room
+@sfx Steps volume:0.7
+@back Black id:Interactive
+@back Room
+@wait 2
+@hide Interactive
+@printer  visible:false
+@goto .HomeEndGame if:"gameEnd=true"
+@goto .SweetHome if:"itemCollected && miniGameCompleted && goBackToStreet && !gameEnd"
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.Map
+@stop
+
+# SweetHome
+@char Kira.Default
+@char Lexa.Default
+{name}: Вот я и дома!
+Lexa: О! {name}, вот ты и вернулся.
+{name}: Что тут делает Кира?
+Lexa: Она пришла чтобы купить рекламу в нашем паблике.
+{name}: Она автор?
+Lexa: Да. И уже хочет заказать 4 поста за 20 евродолларов.
+Kira: С закрепом.
+Lexa: Да. С закрепом.
+Kira: Ну что {name}, нашел фулл?
+{name}: Да, надо было присмотреться.
+@char Kira.Confused
+Kira: Ох какая жа... [wait 1] Что? [wait 1] Как ты его нашел. Я же дала тебе наводку на нормиса. 
+Kira: У этого соевого пориджа не может быть фулл.
+{name}: Ты не охотела меня заскамить второй раз? Я тебе не мамонт.
+@char Lexa.Confused
+@sfx Ehhh
+Lexa: Я ничего не понимаю...
+Kira: Возращай фулл, иначе я не буду заказывать у вас рекламу!
+Lexa: Эээээ с этим фуллом мы сможем привлечь себе новую подписоту! {name}, думаю можно пожертвовать деньгами ради подписчиков.
+Зачем мне вообще отдавать фулл если я могу оставить его у себя.
+@printer  visible:false
+@choice "Отдать фулл Лексе" goto:.GiveFullLexa
+@choice "Отдать фулл Кире" goto:.GiveFullKira
+@choice "Оставить фулл у себя" goto:.FullMy
+@stop
+
+# GiveFullLexa
+@hideUI QuestLog
+@char Lexa.Surprise
+Lexa: Чиназессс
+@char Kira.Confused
+Kira: ну блин...
+@set giveFullLexa=true
+@set gameEnd=true
+Kira: Пойду на улице побираться(((
+@hide Kira
+{name}: Мне тоже надо пройтись.
+@printer  visible:false
+@goto .MapAfterFull
+@stop
+
+# GiveFullKira
+@hideUI QuestLog
+@char Kira.Confused
+Kira: Чиназессс
+@char Lexa.Confused
+@sfx Ehhh
+Lexa: ну блин...
+@set giveFullKira=true
+@set gameEnd=true
+Kira: Пойду подышу свежим воздухом)))
+@hide Kira
+{name}: Мне тоже надо пройтись.
+@printer  visible:false
+@goto .MapAfterFull
+@stop
+
+# FullMy
+@hideUI QuestLog
+@char Lexa.Confused
+@sfx Ehhh
+Lexa: Ты чего...
+@char Kira.Confused
+Kira: Эээ...
+@set gameEnd=true
+Kira: Пойду на улице побираться(((
+@hide Kira
+{name}: Мне тоже надо пройтись.
+@printer  visible:false
+@goto .MapAfterFull
+@stop
+
+# HomeEndGame
+@if giveFullLexa=false
+@char Lexa.Confused
+{name}: Что закибербулили тебя да?
+Lexa: Паблик скатился(((
+@else
+@char Lexa.Surprise
+Lexa: Новая потписота)))
+@endIf
+@printer  visible:false
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.MapAfterFull
+@stop
+
+# StreetEndGame
+@if giveFullKira=false
+@char Kira.Confused
+{name}: Что закибербулили тебя да?
+Kira: Больше никогда не буду делать фуллы...
+@else
+@char Kira.Surprise
+Kira: Деньги Деньги Деньги)))
+@endIf
+@printer  visible:false
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.MapAfterFull
+@stop
+
+# Street
+@sfx Steps volume:0.7
+@back Black id:Interactive
+@back Street
+@wait 2
+@hide Interactive
+@goto .HiKira if:"!itemCollected && !miniGameCompleted"
+@goto .AloneInStreet if:"itemCollected && miniGameCompleted && !goBackToStreet"
+@goto .StreetEndGame if:"gameEnd"
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.Map if:"!itemCollected && miniGameCompleted"
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.MapAfterFull if:"itemCollected && miniGameCompleted && goBackToStreet"
+@stop
+
+# AloneInStreet
+{name}: Хм.. где Кира?
+{name}: Ладно, вернусь домой.
+@sfx Updatelog
+@set "QuestLog=\"Возращайся домой\""
+@set goBackToStreet=true
+@printer  visible:false
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.MapAfterFull
+@stop
+
+# Office
+@sfx Steps volume:0.7
+@back Black id:Interactive
+@back Office
+@wait 2
+@hide Interactive
+@printer  visible:false
+@goto .FindFull if:"!itemCollected && miniGameCompleted"
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.Map
+@stop
+
+#FindFull
+@choice  button:ChoiseButtons/Full pos:750,-390 handler:ButtonArea goto:.FinalyFull
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.Map
+@stop
+
+#FinalyFull
+{name}: ВОТ ОН!!! ФУЛЛ!!! БЕСПЛАТНО!!!
+{name}: Теперь пора вернуться на улицу к Кире.
+@sfx Updatelog
+@set "QuestLog=\"Встретить Киру на улице\""
+@set itemCollected=true
+@printer  visible:false
+@choice  button:ChoiseButtons/OpenMap pos:-750,450 handler:ButtonArea goto:.MapAfterFull
+@stop

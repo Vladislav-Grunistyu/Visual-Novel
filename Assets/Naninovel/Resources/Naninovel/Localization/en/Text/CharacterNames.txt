@@ -1,0 +1,5 @@
+; Russian <ru> to English <en> localization document for `CharacterNames` managed text document
+
+{name}: {name}
+Kira: Kira
+Lexa: Lexa

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 978331dd1a6f3a048b8c621b8c47ef7f, type: 3}
+  m_Name: MemorySettings
+  m_EditorClassIdentifier: 
+  _shuffleAlgorithm: 0
+  _alignLastRow: 1
+  _cardMode: 0
+  _amountOfCards: 10
+  _boardMode: 0
+  _cardsOnBoardLimit: 10
+  _refillAtFoundPercentage: 100
+  _cardAnimationSpeed: 0.5
+  _cardBacks:
+  - {fileID: 21300000, guid: 7d1cc36291a6de34a9924d434c45f936, type: 3}
+  _cardSprites:
+  - {fileID: 21300000, guid: 1a93e4f4f141f474bad4ff76ac327dd6, type: 3}
+  - {fileID: 21300000, guid: 6f5ab23259753994aa0688b323874c04, type: 3}
+  - {fileID: 21300000, guid: 5c6abf7179669d7469d01e68092b427d, type: 3}
+  - {fileID: 21300000, guid: c92b55b65b6d35344a9672f869af5636, type: 3}
+  - {fileID: 21300000, guid: c309ea1b236361942a684f9e28efaa43, type: 3}
+  - {fileID: 21300000, guid: f4e5cc1760ba44c44bc3c6bc44d82992, type: 3}
+  - {fileID: 21300000, guid: d145bb7ef6dfef74ba53fc7d4dd130ed, type: 3}
+  - {fileID: 21300000, guid: 88858977a11b2f249a51b9eb00865f1b, type: 3}
+  - {fileID: 21300000, guid: cfbe510a9359f4f4a8cc33560c2150b9, type: 3}
+  - {fileID: 21300000, guid: 58d6ee4401fd60647862292e24621a33, type: 3}

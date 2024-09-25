@@ -1,0 +1,321 @@
+; Russian <ru> to English <en> localization document for `Main` naninovel script
+
+# 93274fb4
+; @input name summary:"Введите ваше имя."
+@input name summary:Enter your name.
+
+# 4efdec14
+; Lexa: Вставай {name}.
+Lexa: Get up {name}.
+
+# a0f82580
+; Lexa: Я нашла его!
+Lexa: I found him!
+
+# df60314b
+; {name}: Кого его? И почему ты так одета?
+{name}: Who is he? And why are you dressed like that?
+
+# d589d3f5
+; Lexa: Не важно. Я нашла фулл!
+Lexa: It doesn't matter. I found a full one!
+
+# 410988ae
+; {name}: Фулл?
+{name}: Full?
+
+# 171e8029
+; Lexa: ФУЛЛ!
+Lexa: FULL!
+
+# 80b1da0c
+; {name}: Тот самый?
+{name}: That one?
+
+# 803783d5
+; Lexa: Ага, я все паблики промониторила, и вот. В нижнем с телеги ссылочка нашлась.
+Lexa: Yeah, I monitored all the publics, and here it is. There was a link in the lower one from the cart.
+
+# 409b7ff2
+; Lexa: Правда ссылочка вела на трекер. А там пиров нет.
+Lexa: True, the link led to the tracker. And there are no peers there.
+
+# 78b575c3
+; Lexa: Я нашла одного корпарата, она может раздать. Только она хочет лично познакомиться.
+Lexa: I found one corporate member, she can distribute. But she wants to meet in person.
+
+# 389861e6
+; {name}: Лично? Странно. А вдруг это скуф на твинке с тяночки?
+{name}: In person? That's weird. What if it's a skuf on a twink from a chick?
+
+# 34680b4
+; Lexa: Ахахахахаха! Не бойся. Это ирл тян пруфы есть, 23 лвл, листва!
+Lexa: Ahahahahaha! Don't be afraid. This is an irl chick, there are proofs, lvl 23, foliage!
+
+# ab186ca0
+; {name}: Я траву не трогал 3 месяца. А тут такое.
+{name}: I haven't touched the grass for 3 months. And then this.
+
+# bfc2f0bf
+; Lexa: Серьезно? Мы так долго искали фулл, и ты сливаешься.
+Lexa: Seriously? We've been looking for a full one for so long, and you're fading.
+
+# 6de7aaa4
+; {name}: Я пойду! Просто захотелось воды полить.
+{name}: I'll go! I just wanted to water it.
+
+# 847905ef
+; Lexa: Хорошо тогда иди на Jig-Jig Street. Улицу я уже отметила у тебя на карте. Иконка в виде персонажа.
+Lexa: Okay then, go to Jig-Jig Street. I've already marked the street on your map. An icon in the form of a character.
+
+# e88a53e3
+; Lexa: Там ты найдешь девушку по именни Кира.
+Lexa: There you'll find a girl named Kira.
+
+# dbacd6b3
+; {name}: Ок уже иду.
+{name}: Ok, I'm on my way.
+
+# 1594ee76
+; Lexa: Я тоже ухожу. Меня админ паблика позвал на летучку.
+Lexa: I'm leaving too. The public admin invited me to a meeting.
+
+# 758a97c9
+; {name}:  Привет Кира.
+{name}: Hi Kira.
+
+# 832799d0
+; Kira: Так ты и есть тот самый {name}!
+Kira: So you are that very {name}!
+
+# 2e46aa1
+; {name}:  Да, мне сказали что ты можешь освежить пир.
+{name}: Yes, I was told that you can refresh the feast.
+
+# c35d5193
+; Kira: Да, конечно! Держи.
+Kira: Yes, of course! Here you go.
+
+# 91d40d11
+; {name}: Так быстро?
+{name}: So fast?
+
+# 85ec05c3
+; {name}: Подожди... [wait 1] это же ссылка... [wait 1] на... [wait 1] НА ПАТРЕОН!?
+{name}: Wait...[wait 1]This is a link...[wait 1]To...[wait 1]TO PATREON!?
+
+# 4f0e2c1a
+; Kira: Ой похоже что фулл платный!
+Kira: Oh, it looks like the full version is paid!
+
+# af98c57a
+; {name}: ЧТО, ФУЛЛ ПЛАТНЫЙ?
+{name}: WHAT, THE FULL IS PAID?
+
+# b4e0609f
+; {name}: БЫТЬ ТАКОГО НЕ МОЖЕТ. ЧТОБЫ Я ПЛАТИЛ ЗА ФУЛЛ!?
+{name}: THAT CANNOT BE. THAT I WOULD PAY FOR THE FULL!?
+
+# 456fab64
+; {name}: Я найду фулл. Любой ценой. ЛЮБОЙ, НО БЕСЛАТНО!!!
+{name}: I'll find the full version. At any cost. ANY, BUT FOR FREE!!!
+
+# e77dd5d8
+; Kira: А ты смешной. Хорошо я дам тебе фулл. Но чтобы получить его надо сыграть со мной в игру.
+Kira: And you're funny. Okay, I'll give you the full version. But to get it, you have to play a game with me.
+
+# b375f597
+; {name}: В игру? Ну ладно... Это все же лучше чем сидеть без фулла.
+{name}: A game? Oh well... It's still better than sitting without the full version.
+
+# cab1cd9b
+; Kira: Ого, молодец.
+Kira: Wow, well done.
+
+# 510c1f5
+; {name}: Я победил, теперь говори где фулл.
+{name}: I won, now tell me where the full one is.
+
+# 3ac838c9
+; Kira: Хорошо, фулл находиться в офисе ООО "Рога И Копыта". Автор только что там оставил его.
+Kira: Okay, the full one is in the office of OOO "Roga I Kopyta". The author just left it there.
+
+# 3ad7257a
+; Kira: Он еще помечен у тебя восклицательным знаком на карте.
+Kira: It's also marked with an exclamation mark on your map.
+
+# 199c6e61
+; Kira: Когда найдешь фулл, вернись ко мне.
+Kira: When you find the full one, come back to me.
+
+# c5380542
+; Kira: У меня будет для тебя деловое предложение.
+Kira: I have a business proposition for you.
+
+# 3059f07b
+; {name}: Вот я и дома!
+{name}: Here I am!
+
+# 43dbf0db
+; Lexa: О! {name}, вот ты и вернулся.
+Lexa: Oh! {name}, here you are back.
+
+# b224cdef
+; {name}: Что тут делает Кира?
+{name}: What is Kira doing here?
+
+# 786d4dc5
+; Lexa: Она пришла чтобы купить рекламу в нашем паблике.
+Lexa: She came to buy advertising in our public.
+
+# 141a8972
+; {name}: Она автор?
+{name}: Is she the author?
+
+# b9c5ff0
+; Lexa: Да. И уже хочет заказать 4 поста за 20 евродолларов.
+Lexa: Yes. And she already wants to order 4 posts for 20 eurodollars.
+
+# 2aef4520
+; Kira: С закрепом.
+Kira: With a pin.
+
+# ffb2e8d6
+; Lexa: Да. С закрепом.
+Lexa: Yes. With a pin.
+
+# fe4520f6
+; Kira: Ну что {name}, нашел фулл?
+Kira: Well, {name}, did you find the full one?
+
+# f3c0eace
+; {name}: Да, надо было присмотреться.
+{name}: Yes, I should have looked closer.
+
+# 118aca8
+; Kira: Ох какая жа... [wait 1] Что? [wait 1] Как ты его нашел. Я же дала тебе наводку на нормиса. 
+Kira: Oh, what a pity...[wait 1]What?[wait 1]How did you find it? I gave you a tip on the normis. 
+
+# 1a21c834
+; Kira: У этого соевого пориджа не может быть фулл.
+Kira: This soy porridge can't have a full one.
+
+# ad9f878b
+; {name}: Ты не охотела меня заскамить второй раз? Я тебе не мамонт.
+{name}: You didn't want to scam me a second time? I'm not your mammoth.
+
+# e1a5d5e8
+; Lexa: Я ничего не понимаю...
+Lexa: I don't understand anything...
+
+# 402ff97a
+; Kira: Возращай фулл, иначе я не буду заказывать у вас рекламу!
+Kira: Return the full, otherwise I won't order advertising from you!
+
+# f6ccc705
+; Lexa: Эээээ с этим фуллом мы сможем привлечь себе новую подписоту! {name}, думаю можно пожертвовать деньгами ради подписчиков.
+Lexa: Eeeeh with this full we can attract new subscribers! {name}, I think we can sacrifice money for the sake of subscribers.
+
+# 8d6da8ef
+; Зачем мне вообще отдавать фулл если я могу оставить его у себя.
+Why should I give away the full if I can keep it for myself.
+
+# 8b33ffac
+; @choice "Отдать фулл Лексе" goto:.GiveFullLexa
+@choice Give the full to Lexa goto:.GiveFullLexa
+
+# d4523380
+; @choice "Отдать фулл Кире" goto:.GiveFullKira
+@choice Give the full to Kira goto:.GiveFullKira
+
+# 689dc8d9
+; @choice "Оставить фулл у себя" goto:.FullMy
+@choice Keep the full to myself goto:.FullMy
+
+# 9dc4fa9c
+; Lexa: Чиназессс
+Lexa: Chinazess
+
+# d7074082
+; Kira: ну блин...
+Kira: well, damn...
+
+# ed6a2109
+; Kira: Пойду на улице побираться(((
+Kira: I'll go beg on the street(((
+
+# e76e8935
+; {name}: Мне тоже надо пройтись.
+{name}: I also need to take a walk.
+
+# a5eb2f96
+; Kira: Чиназессс
+Kira: Chinazess
+
+# e68c4c24
+; Lexa: ну блин...
+Lexa: well, damn...
+
+# a1ef645b
+; Kira: Пойду подышу свежим воздухом)))
+Kira: I'll go get some fresh air)))
+
+# e76e8935
+; {name}: Мне тоже надо пройтись.
+{name}: I also need to take a walk.
+
+# 1ace87b8
+; Lexa: Ты чего...
+Lexa: What are you...
+
+# b38bbae9
+; Kira: Эээ...
+Kira: Uh...
+
+# ed6a2109
+; Kira: Пойду на улице побираться(((
+Kira: I'll go beg on the street(((
+
+# e76e8935
+; {name}: Мне тоже надо пройтись.
+{name}: I need to go for a walk too.
+
+# 1a54b98d
+; {name}: Что закибербулили тебя да?
+{name}: What cyberbullying you huh?
+
+# 23d5e27c
+; Lexa: Паблик скатился(((
+Lexa: The public has gone downhill(((
+
+# 2bef5b9c
+; Lexa: Новая потписота)))
+Lexa: New pospisota)))
+
+# 1a54b98d
+; {name}: Что закибербулили тебя да?
+{name}: What cyberbullying you huh?
+
+# fb2746a1
+; Kira: Больше никогда не буду делать фуллы...
+Kira: I'll never make fulls again...
+
+# 5a216c43
+; Kira: Деньги Деньги Деньги)))
+Kira: Money Money Money)))
+
+# 1695c75c
+; {name}: Хм.. где Кира?
+{name}: Hmm.. where's Kira?
+
+# b703d75c
+; {name}: Ладно, вернусь домой.
+{name}: Okay, I'll go back home.
+
+# b567dd14
+; {name}: ВОТ ОН!!! ФУЛЛ!!! БЕСПЛАТНО!!!
+{name}: HERE IT IS!!! FULL!!! FREE!!!
+
+# 72797209
+; {name}: Теперь пора вернуться на улицу к Кире.
+{name}: Now it's time to go back to the street to Kira.
